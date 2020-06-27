@@ -1,0 +1,252 @@
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #E8E8E8;
+}
+
+header .promocion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .promocion img {
+  width: 100%;
+}
+
+header .promo-btn {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .promo-btn button {
+  cursor: pointer;
+  background-color: #E8E8E8;
+  border: none;
+  padding: 1px 18px;
+  outline: none;
+}
+
+header .promo-btn button i {
+  font-size: 12px;
+  color: gray;
+}
+
+header .promo-btn button i:hover {
+  color: black;
+}
+
+@media only screen and (min-width: 1024px) {
+  .otras-tiendas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-top: 0;
+  }
+  .otras-tiendas .lista {
+    width: 1600px;
+    margin-bottom: 8px;
+  }
+  .otras-tiendas .lista ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .otras-tiendas .lista ul li {
+    list-style: none;
+    margin: 0 15px;
+    display: flex;
+  }
+  .otras-tiendas .lista ul li a {
+    text-decoration: none;
+    font-size: 10px;
+    color: gray;
+  }
+  .otras-tiendas .lista ul li a:hover {
+    color: #e10098;
+  }
+  nav {
+    background-color: #e10098;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .sub-nav {
+    width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  nav .sub-nav .imagen {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .sub-nav .imagen .logo a img {
+    width: 85%;
+    display: block;
+    margin: auto;
+  }
+  nav .sub-nav .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 950px;
+    margin: 0;
+  }
+  nav .sub-nav .flex .form-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .sub-nav .flex .form-control input {
+    height: 40px;
+    width: 910px;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+  }
+  nav .sub-nav .flex .form-control button {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: #FFFFFF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  nav .sub-nav .flex .form-control button i {
+    color: #ADA8A8;
+    font-size: 1rem;
+  }
+  nav .sub-nav .sesion {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .sub-nav .sesion .lista-pedidos ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+  nav .sub-nav .sesion .lista-pedidos ul li {
+    list-style: none;
+    padding: 0 10px;
+  }
+  nav .sub-nav .sesion .lista-pedidos ul li a {
+    font-size: .9rem;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  nav .sub-nav .bag {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .sub-nav .bag .sub-bag i {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  nav .sub-nav .bag .sub-bag .fa-shopping-bag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .sub-nav .bag .sub-bag span {
+    margin-top: 5px;
+    font-size: .8rem;
+    position: absolute;
+    color: #e10098;
+  }
+  .opciones-varias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+  }
+  .opciones-varias .sub-nav {
+    width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  .opciones-varias .sub-nav .departamentos {
+    width: 50%;
+    display: flex;
+  }
+  .opciones-varias .sub-nav .departamentos .dep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .opciones-varias .sub-nav .departamentos .dep a {
+    text-decoration: none;
+  }
+  .opciones-varias .sub-nav .departamentos .dep p {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+  }
+  .opciones-varias .sub-nav .departamentos .dep p:hover {
+    color: #e10098;
+  }
+  .opciones-varias .sub-nav .departamentos .regalos-credito-seguros {
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    flex: 1;
+  }
+  .opciones-varias .sub-nav .departamentos .regalos-credito-seguros ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .opciones-varias .sub-nav .departamentos .regalos-credito-seguros ul li {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 15px;
+  }
+  .opciones-varias .sub-nav .departamentos .regalos-credito-seguros ul li a {
+    text-decoration: none;
+  }
+  .opciones-varias .sub-nav .departamentos .regalos-credito-seguros ul li a p {
+    color: gray;
+    font-weight: lighter;
+  }
+  .opciones-varias .sub-nav .departamentos .regalos-credito-seguros ul li a p:hover {
+    color: #e10098;
+  }
+  .opciones-varias .sub-nav .varios {
+    width: 50%;
+  }
+  .opciones-varias .sub-nav .varios .sorteos-ayuda-tiendas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .opciones-varias .sub-nav .varios .sorteos-ayuda-tiendas ul {
+    display: flex;
+    list-style: none;
+  }
+  .opciones-varias .sub-nav .varios .sorteos-ayuda-tiendas ul li a {
+    text-decoration: none;
+  }
+}
