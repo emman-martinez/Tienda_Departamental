@@ -1,6 +1,6 @@
- # Liverpool
+ # Tienda Departamental
 
- "Página de Liverpool"
+ "Tienda departamental con JavaScript"
 
  ### Notas:
  Recuerden reconstruir los módulos de Node
