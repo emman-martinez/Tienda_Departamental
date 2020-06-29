@@ -1,0 +1,257 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #E8E8E8;
+    .promocion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }   
+    .promo-btn {
+        background-color: $claro;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        button {
+            cursor: pointer;
+            background-color: #E8E8E8;
+            border: none;
+            padding: 1px 18px;
+            outline: none;
+            i {
+                font-size: 12px;  
+                color: gray;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@include desktop {
+    .otras-tiendas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        margin-top: 0;
+        .lista {
+            width: 1600px;
+            margin-bottom: 8px; 
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                li {
+                    list-style: none;
+                    margin: 0 15px;
+                    display: flex;
+                    a {
+                        text-decoration: none;
+                        font-size: 10px;
+                        color: gray;
+                        &:hover {
+                            color: $rosa;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        background-color: $rosa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sub-nav {
+            width: 1500px;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            margin: 10px 0;  
+            .imagen {
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .logo {
+                    a {
+                        img {
+                            width: 85%;
+                            display: block;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            .flex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                width: 950px;
+                margin: 0;
+                .form-control {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    input {
+                        height: 40px;
+                        width: 910px;
+                        border: none;
+                        outline: none;
+                        padding-left: 12px;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        border-right: none;
+                    }
+                    button {
+                        cursor: pointer;
+                        height: 40px;
+                        width: 40px;
+                        border: none;
+                        background: $claro;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        i {
+                            color: #ADA8A8;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            .sesion {
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .lista-pedidos {
+                    ul {
+                        display: flex;
+                        margin: 0;
+                        padding: 0; 
+                        justify-content: space-between;
+                        li {
+                            list-style: none;
+                            padding: 0 10px;
+                            a {
+                                font-size: .9rem;
+                                text-decoration: none;
+                                color: $claro;
+                            }
+                        }
+                    }   
+                }
+            }
+            .bag {
+                width: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                .sub-bag {
+                    i {
+                        color: $claro;
+                        font-size: 1.5rem;
+                        position: relative;
+                    }
+                    .fa-shopping-bag {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    span {
+                        margin-top: 5px;
+                        font-size: .8rem;
+                        position: absolute;
+                        color: $rosa;
+                    }
+                }
+            }
+        }
+    }
+    .opciones-varias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $claro;
+        margin: 0;
+        padding: 0; 
+        .sub-nav {
+            width: 1500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around; 
+            margin: 0;
+            padding: 0; 
+            .departamentos {
+                width: 50%;
+                display: flex;
+                .dep {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a {
+                        text-decoration: none;
+                    }
+                    p {
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: black; 
+                        &:hover {
+                            color: $rosa;
+                        }
+                    }
+                }
+                .regalos-credito-seguros {
+                    display: flex;
+                    justify-content: initial;
+                    align-items: center;
+                    flex: 1;
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        justify-content: center;
+                        align-items: center;
+                        li {
+                            font-size: 12px;
+                            font-weight: bold;
+                            margin: 0 15px;
+                        }
+                        li a {
+                            text-decoration: none;
+                            p {
+                                color: gray;
+                                font-weight: lighter;
+                                &:hover {
+                                    color: $rosa;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .varios {
+                width: 50%;
+                .sorteos-ayuda-tiendas {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        li {
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
