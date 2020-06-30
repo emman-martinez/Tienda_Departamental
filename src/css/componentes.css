@@ -107,7 +107,7 @@ header .nav-bar .navegacion .buscador-principal {
 
 header .nav-bar .navegacion .buscador-principal input {
   height: 40px;
-  width: 700px;
+  width: 800px;
   border: none;
   outline: none;
   padding-left: 12px;
@@ -172,6 +172,66 @@ header .nav-bar .navegacion .bolsa-compras i span {
   font-size: 1rem;
 }
 
+/* ********** DEPARTAMENTOS ********** */
+.contenedor-departamentos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 0.875rem;
+}
+
+.contenedor-departamentos ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-departamentos ul li {
+  cursor: pointer;
+  list-style: none;
+  margin-right: 40px;
+}
+
+.contenedor-departamentos ul li:hover span,
+.contenedor-departamentos ul li:hover .fa-sort-down,
+.contenedor-departamentos ul li:hover a {
+  color: #e10098;
+}
+
+.contenedor-departamentos ul li span {
+  color: #000000;
+}
+
+.contenedor-departamentos ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contenedor-departamentos .departamentos {
+  display: flex;
+  margin-left: 15px;
+}
+
+.contenedor-departamentos .departamentos li {
+  display: flex;
+}
+
+.contenedor-departamentos .departamentos li .fa-sort-down {
+  margin-left: 10px;
+  font-size: 15px;
+  color: gray;
+}
+
+.contenedor-departamentos .departamentos li:nth-child(1) {
+  margin-right: 90px;
+  font-weight: bold;
+}
+
+.contenedor-departamentos .ayuda {
+  display: flex;
+}
+
+/* ********** CONTADOR ********** */
 .contador {
   display: flex;
   justify-content: center;
@@ -179,28 +239,26 @@ header .nav-bar .navegacion .bolsa-compras i span {
   flex-direction: column;
   background-color: darkslateblue;
   color: #FFFFFF;
-  margin: 0;
-  padding: 10px;
+  padding: 5px 0;
 }
 
 .contador p {
-  margin: 0;
+  margin: 0 0 5px 0;
   padding: 0;
+  font-size: 1.3rem;
 }
 
 .contador .hora-regresiva {
-  margin: 0;
-  padding: 0;
   display: flex;
+  margin: 5px 0;
 }
 
 .contador .hora-regresiva .time {
-  margin: 15px;
   text-align: center;
 }
 
 .contador .hora-regresiva .time h2 {
-  margin: 0;
+  margin: 0 15px;
   padding: 0;
 }
 

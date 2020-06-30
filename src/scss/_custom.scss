@@ -16,7 +16,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
+        position: relative; 
         a {
             img {
                 width: 100%;
@@ -94,7 +94,8 @@ header {
                 align-items: center;
                 input {
                     height: 40px;
-                    width: 700px;
+                    width: 800px;
+                    // width: 700px;
                     border: none;
                     outline: none;
                     padding-left: 12px;
@@ -155,6 +156,58 @@ header {
     }
 }
 
+/* ********** DEPARTAMENTOS ********** */
+.contenedor-departamentos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 0.875rem;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            cursor: pointer;
+            list-style: none;
+            margin-right: 40px; 
+            &:hover {
+                span,
+                .fa-sort-down,
+                a {
+                    color: $tienda;
+                }
+            }
+            span {
+                color: $negro; 
+            }
+            a {
+                text-decoration: none;
+                color: $negro;
+            }
+        }
+    }
+    .departamentos {
+        display: flex;
+        margin-left: 15px;
+        li {
+            display: flex;
+            .fa-sort-down {
+                margin-left: 10px;
+                font-size: 15px;
+                color: $gris;
+            }
+            &:nth-child(1) {
+                margin-right: 90px;
+                font-weight: bold;
+            }
+        }
+    }
+    .ayuda {
+        display: flex;
+    }
+}
+
+/* ********** CONTADOR ********** */
 .contador {
     display: flex;
     justify-content: center;
@@ -162,21 +215,19 @@ header {
     flex-direction: column;
     background-color: darkslateblue;
     color: $claro;
-    margin: 0;
-    padding: 10px;
+    padding: 5px 0;
     p {
-        margin: 0;
+        margin: 0 0 5px 0;
         padding: 0;
+        font-size: 1.3rem;
     }
     .hora-regresiva {
-        margin: 0;
-        padding: 0;
         display: flex;
+        margin: 5px 0;
         .time {
-            margin: 15px;
             text-align: center;
             h2 {
-                margin: 0;
+                margin: 0 15px;
                 padding: 0;
             }
             small {
