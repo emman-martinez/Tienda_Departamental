@@ -11,6 +11,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* *** PROMOS *** */
     .promos {
         display: flex;
@@ -161,49 +162,80 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
     font-size: 0.875rem;
     ul {
-        margin: 0;
         padding: 0;
-        li {
-            cursor: pointer;
-            list-style: none;
-            margin-right: 40px; 
-            &:hover {
-                span,
-                .fa-sort-down,
-                a {
-                    color: $tienda;
-                }
-            }
-            span {
-                color: $negro; 
-            }
-            a {
-                text-decoration: none;
-                color: $negro;
-            }
-        }
+        margin: 0;
+    }
+    li {
+        list-style: none;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
     }
     .departamentos {
         display: flex;
-        margin-left: 15px;
         li {
-            display: flex;
-            .fa-sort-down {
-                margin-left: 10px;
-                font-size: 15px;
+            margin-right: 40px;
+            padding: 10px 10px;
+            position: relative;
+            color: $negro;
+            span {
+                margin-right: 10px;   
+            }
+            i {
                 color: $gris;
             }
-            &:nth-child(1) {
-                margin-right: 90px;
-                font-weight: bold;
+            ul {
+                position: absolute;
+                top: 90%;
+                background-color: #F8F6F7;
+                width: 250px;
+                border-radius: 2px;
+                display: none;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 5px;
+                    padding: 5px 5px;
+                }
+            }
+            &:hover {
+                color: $tienda;
+                i {
+                    color: $tienda;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                        transition: margin-left .5s ease;
+                        i {
+                            color: $gris;
+                        }
+                    }
+                    &:hover {
+                        li {
+                            margin-left: 15px;
+                        }
+                    }
+                }
             }
         }
     }
     .ayuda {
         display: flex;
+        li {
+            margin: 10px;
+            color: $negro;
+            a {
+                color: $negro;
+                &:hover {
+                    color: $tienda;
+                }
+            }
+        }
     }
 }
 

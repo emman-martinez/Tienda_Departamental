@@ -9,6 +9,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* *** PROMOS *** */
   /* *** OTRAS TIENDAS *** */
   /* *** NAVEGACIÓN *** */
@@ -177,58 +178,98 @@ header .nav-bar .navegacion .bolsa-compras i span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
   font-size: 0.875rem;
 }
 
 .contenedor-departamentos ul {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-.contenedor-departamentos ul li {
-  cursor: pointer;
+.contenedor-departamentos li {
   list-style: none;
-  margin-right: 40px;
+  cursor: pointer;
 }
 
-.contenedor-departamentos ul li:hover span,
-.contenedor-departamentos ul li:hover .fa-sort-down,
-.contenedor-departamentos ul li:hover a {
-  color: #e10098;
-}
-
-.contenedor-departamentos ul li span {
-  color: #000000;
-}
-
-.contenedor-departamentos ul li a {
+.contenedor-departamentos a {
   text-decoration: none;
-  color: #000000;
 }
 
 .contenedor-departamentos .departamentos {
   display: flex;
-  margin-left: 15px;
 }
 
 .contenedor-departamentos .departamentos li {
-  display: flex;
+  margin-right: 40px;
+  padding: 10px 10px;
+  position: relative;
+  color: #000000;
 }
 
-.contenedor-departamentos .departamentos li .fa-sort-down {
-  margin-left: 10px;
-  font-size: 15px;
+.contenedor-departamentos .departamentos li span {
+  margin-right: 10px;
+}
+
+.contenedor-departamentos .departamentos li i {
   color: gray;
 }
 
-.contenedor-departamentos .departamentos li:nth-child(1) {
-  margin-right: 90px;
-  font-weight: bold;
+.contenedor-departamentos .departamentos li ul {
+  position: absolute;
+  top: 90%;
+  background-color: #F8F6F7;
+  width: 250px;
+  border-radius: 2px;
+  display: none;
+}
+
+.contenedor-departamentos .departamentos li ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px 5px;
+}
+
+.contenedor-departamentos .departamentos li:hover {
+  color: #e10098;
+}
+
+.contenedor-departamentos .departamentos li:hover i {
+  color: #e10098;
+}
+
+.contenedor-departamentos .departamentos li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-departamentos .departamentos li:hover ul li {
+  transition: margin-left .5s ease;
+}
+
+.contenedor-departamentos .departamentos li:hover ul li i {
+  color: gray;
+}
+
+.contenedor-departamentos .departamentos li:hover ul:hover li {
+  margin-left: 15px;
 }
 
 .contenedor-departamentos .ayuda {
   display: flex;
+}
+
+.contenedor-departamentos .ayuda li {
+  margin: 10px;
+  color: #000000;
+}
+
+.contenedor-departamentos .ayuda li a {
+  color: #000000;
+}
+
+.contenedor-departamentos .ayuda li a:hover {
+  color: #e10098;
 }
 
 /* ********** CONTADOR ********** */
