@@ -1,7 +1,8 @@
 /* ********** FUENTE ********** */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* ********** HTML, BODY ********** */
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -46,6 +47,7 @@ header .btn-hero {
 }
 
 header .btn-hero .promo-btn {
+  background-color: #E8E8E8;
   border: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -82,7 +84,7 @@ header .otras-tiendas {
 }
 
 header .otras-tiendas .tiendas {
-  min-width: 1350px;
+  min-width: 1250px;
 }
 
 header .otras-tiendas .tiendas .lista-tiendas {
@@ -118,8 +120,8 @@ header .navegador .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5px 0 3px 0;
-  min-width: 1350px;
+  margin: 7px 0 7px 0;
+  min-width: 1250px;
 }
 
 header .navegador .nav-bar .img-tienda {
@@ -127,6 +129,7 @@ header .navegador .nav-bar .img-tienda {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin: 3px;
   width: 15%;
 }
 
@@ -185,6 +188,11 @@ header .navegador .nav-bar .iniciar-sesion {
   width: 10%;
 }
 
+header .navegador .nav-bar .mis-pedidos p,
+header .navegador .nav-bar .iniciar-sesion p {
+  font-size: 13px;
+}
+
 header .navegador .nav-bar .mis-pedidos {
   margin-left: 15px;
 }
@@ -215,97 +223,195 @@ header .navegador .nav-bar .bolsa-compras i span {
 header .contenido-servicios {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  position: relative;
   width: 100%;
+}
+
+header .contenido-servicios .departamento-categoria {
+  background-color: pink;
+  height: 550px;
+  position: absolute;
+  width: 920px;
+  top: 36px;
+  right: 7.5%;
+  display: none;
 }
 
 header .contenido-servicios .navegador-servicios {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 1350px;
+  min-width: 1250px;
 }
 
-header .contenido-servicios .navegador-servicios ul {
-  margin: 0;
-  padding: 0;
-}
-
-header .contenido-servicios .navegador-servicios li {
-  list-style: none;
-  cursor: pointer;
-}
-
-header .contenido-servicios .navegador-servicios a {
-  text-decoration: none;
-}
-
-header .contenido-servicios .navegador-servicios .departamentos {
+header .contenido-servicios .departamentos {
   display: flex;
   align-items: center;
   width: 70%;
 }
 
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista {
+header .contenido-servicios .departamentos .departamentos-lista {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li {
-  margin-right: 40px;
-  padding: 10px 10px;
+header .contenido-servicios .departamentos .departamentos-lista li {
+  cursor: pointer;
+  list-style: none;
   position: relative;
-  color: negro;
 }
 
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li span {
-  margin-right: 10px;
+header .contenido-servicios .departamentos .departamentos-lista li span {
+  font-size: 0.875rem;
 }
 
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li i {
-  color: gray;
+header .contenido-servicios .departamentos .departamentos-lista li span i {
+  color: #000000;
+  font-size: 0.8rem;
+  margin-left: 5px;
 }
 
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li .submenu-departamentos,
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li .submenu-credito,
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li .submenu-seguros {
-  background-color: #F8F6F7;
-  border-radius: 2px;
-  position: absolute;
-  top: 90%;
-  width: 250px;
-  display: none;
-}
-
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li .submenu-departamentos li,
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li .submenu-credito li,
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li .submenu-seguros li {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px;
-  padding: 5px 5px;
+header .contenido-servicios .departamentos .departamentos-lista li ul.submenu-departamentos:hover i,
+header .contenido-servicios .departamentos .departamentos-lista li ul.submenu-departamentos:hover span {
   color: #000000;
 }
 
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li:hover {
+header .contenido-servicios .departamentos .departamentos-lista li ul {
+  background-color: #EDEDED;
+  border-radius: 2px;
+  display: none;
+  margin: 0;
+  padding: 0px;
+  position: absolute;
+  top: 90%;
+  width: 230px;
+  -webkit-box-shadow: -4px 3px 5px -2px rgba(8, 8, 8, 0.22);
+  -moz-box-shadow: -4px 3px 5px -2px rgba(8, 8, 8, 0.22);
+  box-shadow: -4px 3px 5px -2px rgba(8, 8, 8, 0.22);
+}
+
+header .contenido-servicios .departamentos .departamentos-lista li ul li {
+  list-style: none;
+  margin: 8px;
+  color: #000000;
+  transition: margin .5s ease;
+}
+
+header .contenido-servicios .departamentos .departamentos-lista li ul li span {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .contenido-servicios .departamentos .departamentos-lista li ul li:hover {
+  color: #e10098;
+  margin-left: 13px;
+  transition: margin-left .5s ease;
+}
+
+header .contenido-servicios .departamentos .departamentos-lista li ul li:hover i {
+  color: #000000;
+}
+
+header .contenido-servicios .departamentos .departamentos-lista li ul.submenu-departamentos li:hover .departamento-categoria {
+  display: flex;
+}
+
+header .contenido-servicios .departamentos .departamentos-lista li ul.submenu-credito:after {
+  border: 7px solid #EDEDED;
+  content: '';
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: -40%;
+  left: 30%;
+}
+
+header .contenido-servicios .departamentos .departamentos-lista li ul.submenu-seguros:after {
+  border: 7px solid #EDEDED;
+  content: '';
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: -10%;
+  left: 53%;
+}
+
+header .contenido-servicios .departamentos .departamentos-lista li:hover {
   color: #e10098;
 }
 
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li:hover i {
+header .contenido-servicios .departamentos .departamentos-lista li:hover > span i {
   color: #e10098;
 }
 
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li:hover .submenu-departamentos,
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li:hover .submenu-credito,
-header .contenido-servicios .navegador-servicios .departamentos .departamentos-lista li:hover .submenu-seguros {
+header .contenido-servicios .departamentos .departamentos-lista li:hover ul {
   display: flex;
   flex-direction: column;
 }
 
-header .contenido-servicios .navegador-servicios .soporte {
+header .contenido-servicios .departamentos .departamentos-lista > li:nth-child(1) {
+  margin-right: 50px;
+  padding: 10px 10px;
+}
+
+header .contenido-servicios .departamentos .departamentos-lista > li:nth-child(2),
+header .contenido-servicios .departamentos .departamentos-lista > li:nth-child(3),
+header .contenido-servicios .departamentos .departamentos-lista > li:nth-child(4) {
+  margin-right: 20px;
+  padding: 10px 10px;
+}
+
+header .contenido-servicios .soporte {
   width: 30%;
 }
 
-header .contenido-servicios .navegador-servicios .soporte .soporte-lista {
+header .contenido-servicios .soporte .soporte-lista {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+header .cuenta-regresiva {
+  width: 100%;
+}
+
+header .cuenta-regresiva .contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: darkslateblue;
+  color: #FFFFFF;
+  padding: 5px 0;
+}
+
+header .cuenta-regresiva .contador p {
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 1.3rem;
+}
+
+header .cuenta-regresiva .contador .hora-regresiva {
+  display: flex;
+  margin: 5px 0;
+}
+
+header .cuenta-regresiva .contador .hora-regresiva .time {
+  text-align: center;
+}
+
+header .cuenta-regresiva .contador .hora-regresiva .time h2 {
+  margin: 0 15px;
+  padding: 0;
+}
+
+header .cuenta-regresiva .contador .hora-regresiva .time small {
+  font-size: 10px;
 }

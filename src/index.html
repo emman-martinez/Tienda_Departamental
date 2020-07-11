@@ -9,9 +9,9 @@
 </head>
 
 <body>
-     <!-- ********** CONTAINER ********** -->
+    <!-- ********** CONTAINER ********** -->
     <div class="container">
-         <!-- ***** HEADER ***** -->
+        <!-- ***** HEADER ***** -->
         <header>
             <!-- * HERO * -->
             <div class="hero">
@@ -43,7 +43,7 @@
             </div>
             <!-- * NAVEGADOR * -->
             <div class="navegador">
-                <div class="nav-bar"> 
+                <div class="nav-bar">
                     <div class="img-tienda">
                         <a href="#">
                             <img src="https://assetspwa.liverpool.com.mx/assets/images/logos/liverpool-logo.svg" alt="logo-tienda">
@@ -62,7 +62,7 @@
                     </div>
                     <div class="iniciar-sesion">
                         <p>
-                            <a href="#">Iniciar Sesión</a> 
+                            <a href="#">Iniciar Sesión</a>
                         </p>
                     </div>
                     <div class="bolsa-compras">
@@ -74,6 +74,7 @@
             </div>
             <!-- * CONTENIDO Y SERVICIOS * -->
             <div class="contenido-servicios">
+                <div class="departamento-categoria" id="departamento-categoria"></div>
                 <div class="navegador-servicios">
                     <!-- DEPARTAMENTOS  -->
                     <div class="departamentos">
@@ -81,26 +82,28 @@
                             <li>
                                 <span>
                                     Departamentos
+                                    <i class="fas fa-chevron-down"></i>
                                 </span>
-                                <i class="fas fa-chevron-down"></i>
                                 <ul class="submenu-departamentos">
                                     <li>
                                         <span>
                                             Mujer
+                                            <i class="fas fa-chevron-right"></i>
                                         </span>
-                                        <i class="fas fa-chevron-right"></i>
                                     </li>
                                     <li>
                                         <span>
                                             Hombre
+                                            <i class="fas fa-chevron-right"></i>
                                         </span>
-                                        <i class="fas fa-chevron-right"></i>
+
                                     </li>
                                     <li>
                                         <span>
                                             Bebés 0 - 24 Meses
+                                            <i class="fas fa-chevron-right"></i>
                                         </span>
-                                        <i class="fas fa-chevron-right"></i>
+
                                     </li>
                                 </ul>
                             </li>
@@ -110,8 +113,8 @@
                             <li>
                                 <span>
                                     Mi crédito
+                                    <i class="fas fa-chevron-down"></i>
                                 </span>
-                                <i class="fas fa-chevron-down"></i>
                                 <ul class="submenu-credito">
                                     <li>
                                         <span>
@@ -122,9 +125,10 @@
                             </li>
                             <li>
                                 <span>
-                                    Centro de Seguros
+                                    Centro de Seguros 
+                                    <i class="fas fa-chevron-down"></i>
                                 </span>
-                                <i class="fas fa-chevron-down"></i>
+
                                 <ul class="submenu-seguros">
                                     <li>
                                         <span>
@@ -167,7 +171,32 @@
                 </div>
             </div>
             <!-- * CUENTA REGRESIVA * -->
-            <div class="cuenta-regresiva"></div>
+            <div class="cuenta-regresiva">
+                <div class="contador">
+                    <p>Se te acaba el tiempo, termina en:</p>
+                    <div class="hora-regresiva">
+                        <div class="time">
+                            <h2 id="days">00</h2>
+                            <small>DÍAS</small>
+                        </div>
+                        <p>:</p>
+                        <div class="time">
+                            <h2 id="hours">00</h2>
+                            <small>HORAS</small>
+                        </div>
+                        <p>:</p>
+                        <div class="time">
+                            <h2 id="minutes">00</h2>
+                            <small>MINUTOS</small>
+                        </div>
+                        <p>:</p>
+                        <div class="time">
+                            <h2 id="seconds">00</h2>
+                            <small>SEGUNDOS</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </header>
 
